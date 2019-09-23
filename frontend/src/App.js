@@ -12,10 +12,8 @@ function App() {
     <Router>
       <Navigation/>
       <div className="container p-4">
-        <Route path="/user" component={CreateUsers}/>
         <CreateUsers />
       </div>
-     
     </Router>
   );
 }
