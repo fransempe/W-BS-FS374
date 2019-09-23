@@ -2,11 +2,22 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
   export class CreateUsers extends Component {
+    constructor(){
+      super();
+      this.state = {
+        users: [],
+        username: '',
+        currentPage: 1,
+        todosPerPage: 2
+      }
+    }
+    handleClick(event) {
+      this.setState({
+        currentPage: Number(event.target.id)
+      });
+    }
 
-  state = {
-    users: [],
-    username: ''
-  }
+    
 
   async componentDidMount(){
     this.getUsers();
