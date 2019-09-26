@@ -9,7 +9,8 @@ const URI =  'mongodb+srv://fransempe:32668766@cluster0-0wfee.mongodb.net/whetu?
 mongoose.connect(URI, {
     useNewUrlParser: true,
     useCreateIndex: true,
-    useFindAndModify: false
+    useFindAndModify: false,
+    useUnifiedTopology: true
 });
 
 const connection = mongoose.connection; 
