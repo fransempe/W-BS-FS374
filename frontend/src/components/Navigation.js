@@ -6,7 +6,7 @@ export class Navigation extends Component {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container">
-                    <Link className="navbar-brand" to="/">
+                    <Link className="navbar-brand" to="/signin">
                         Whetu Users APP
                     </Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,7 +15,10 @@ export class Navigation extends Component {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <Link className="nav-link" to="/">Create User</Link>
+                                <Link className="nav-link" to="/signin">Sign In</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/signup">Sign Up</Link>
                             </li>
                         </ul>
                     </div>
